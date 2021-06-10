@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<bindings xmlns="http://java.sun.com/xml/ns/jaxb" if-exists="true" version="2.1">
+  <bindings xmlns:tns="http://www.tekup.de/ws/soap/white/models/whitetest" if-exists="true" scd="x-schema::tns">
+    <schemaBindings map="false">
+      <package name="com.er5bus.ws.soap.consume.WhiteTestsClasses"/>
+    </schemaBindings>
+    <bindings if-exists="true" scd="tns:StudentRequest">
+      <class ref="com.er5bus.ws.soap.consume.WhiteTestsClasses.StudentRequest"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:WhiteTestResponse">
+      <class ref="com.er5bus.ws.soap.consume.WhiteTestsClasses.WhiteTestResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:Student">
+      <class ref="com.er5bus.ws.soap.consume.WhiteTestsClasses.Student"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:Exam">
+      <class ref="com.er5bus.ws.soap.consume.WhiteTestsClasses.Exam"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:Address">
+      <class ref="com.er5bus.ws.soap.consume.WhiteTestsClasses.Address"/>
+    </bindings>
+  </bindings>
+</bindings>
